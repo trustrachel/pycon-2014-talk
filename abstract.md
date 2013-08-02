@@ -8,7 +8,7 @@ Developing Flask Extensions [need less boring title]
 CATEGORY
 ---------
 
-TBD
+Best Practices/Patterns
 
 DURATION
 --------
@@ -18,11 +18,14 @@ DURATION
 DESCRIPTION
 -----------
 
-tbd
+You can create a web application with Flask in seven lines of code. What happens when your app grows to thousands? How do you create reusable, shareable libraries?
+
+We'll use a real extension I created (Flask-FeatureFlags) to look at the different ways you can hook into Flask applications and 
+
 
 AUDIENCE
 --------
-Users of Flask, and people curious about it's capabilities.
+Users of Flask or web developers curious about its capabilities. 
 
 PYTHON LEVEL
 ------------
@@ -32,7 +35,7 @@ Intermediate
 OBJECTIVES
 ----------
 
-Users of Flask will learn how to extend it and make shareable, reuseable libraries. Those who haven't used Flask will get an idea of its capabilities. 
+Users of Flask will learn how to extend it and make shareable, reuseable libraries. Application developers not familiar with Flask get an idea of its capabilities.
 
 DETAILED ABSTRACT
 -----------------
@@ -43,11 +46,26 @@ OUTLINE
 -------
 
 1. Introduction (5 min)
-* About me
-*  Why use Flask?
-2. Topic 1
-3. Topic 2
-4. Topic 3
+	* About me
+ 	* The promise of Flask - lightweight, free to be you.  Here's a toolkit, now go build
+ 	* The bane of Flask - no batteries included. Here's a toolkit, now go build
+
+2. Intro to the guts of Flask (5min)
+	* remove me?
+	
+3. Extending functionality (5min) 
+	* Flask-FeatureFlags - 100LOC 
+	* Adds custom functionality and jinja filters 
+	* Go over how it does thi
+
+4. Changing behavior (5min)
+
+5. Supporting the ecosystem (5min)
+	* Flask <0.6
+	* Flask 0.7-0.9
+	* Flask 0.10+ and Python 3
+
+6. Questions (5min)
 
 ADDITIONAL NOTES
 -----------------

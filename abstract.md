@@ -3,12 +3,12 @@ PyCon Talk
 
 TITLE
 ------
-Developing Flask Extensions
+Developing Flask Extensions [need less boring title]
 
 CATEGORY
 ---------
 
-tbd
+TBD
 
 DURATION
 --------
@@ -22,7 +22,7 @@ tbd
 
 AUDIENCE
 --------
-Users of Flask, and people who are thinking of using it and want to know it's capabilities.
+Users of Flask, and people curious about it's capabilities.
 
 PYTHON LEVEL
 ------------

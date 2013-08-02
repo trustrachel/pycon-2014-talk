@@ -1,4 +1,4 @@
-pycon-2014-talk
-===============
+PyCon 2014 Talk Proposal 
+========================
 
-Research and notes for PyCon 2014 talk.
+Research and notes for my talk proposal on developing Flask extensions. 

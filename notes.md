@@ -1,5 +1,3 @@
-
-
 Ways to hook into Flask
 
 * jinja functions, filters, etc
@@ -8,11 +6,12 @@ Ways to hook into Flask
 * listen to signals
 	- for timing, you can listen for before/after events and log them
 
-
-
 Gotchas
 
 * How do you interface with SQLAlchemy?
+* How to integrate with other libraries w/o crashing
+* Working with application factories: http://flask.pocoo.org/docs/extensiondev/
+
 
 Examples of plugins:
 
@@ -26,5 +25,6 @@ Examples of plugins:
 
 * Flask-SQLAlchemy 
 	* Makes integration with SQLAlchemy easy
-	* good use of signals
+	* good use of signals to do work
 	* https://github.com/mitsuhiko/flask-sqlalchemy/blob/master/flask_sqlalchemy/__init__.py
+

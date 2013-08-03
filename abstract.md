@@ -20,7 +20,7 @@ DESCRIPTION
 
 You can create a web application with Flask in seven lines of code. What happens when your app grows to thousands? How do you create reusable, shareable libraries?
 
-We'll use a real extension I created (Flask-FeatureFlags) to look at the different ways you can hook into Flask applications and 
+We'll use a real but very simple extension I created (Flask-FeatureFlags) to look at the different ways you can hook into Flask applications. 
 
 
 AUDIENCE
@@ -50,10 +50,7 @@ OUTLINE
  	* The promise of Flask - lightweight, free to be you.  Here's a toolkit, now go build
  	* The bane of Flask - no batteries included. Here's a toolkit, now go build
 
-2. Intro to the guts of Flask (5min)
-	* remove me?
-	
-3. Extending functionality (5min) 
+2. Extending functionality (5min) 
 	* Flask-FeatureFlags - 100LOC 
 	* Adds custom functionality and jinja filters 
 	* Go over how it does thi
@@ -69,6 +66,8 @@ OUTLINE
 
 ADDITIONAL NOTES
 -----------------
+
+* Flask-FeatureFlags is open source and only ~100 LOC: https://github.com/trustrachel/Flask-FeatureFlags
 
 This would be my first time speaking at a conference like PyCon. I’ve spoken at my company a few times and at PyLadies events. I'll have the opportunity to speak at several user groups beforehand.
 

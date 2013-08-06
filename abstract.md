@@ -25,7 +25,7 @@ We'll use a real but very simple extension I created (Flask-FeatureFlags) to loo
 
 AUDIENCE
 --------
-Users of Flask or web developers curious about its capabilities. 
+Users of Flask or web application developers curious about its capabilities. 
 
 PYTHON LEVEL
 ------------
@@ -35,7 +35,7 @@ Intermediate
 OBJECTIVES
 ----------
 
-Users of Flask will learn how to extend it and make shareable, reuseable libraries. Application developers not familiar with Flask get an idea of its capabilities.
+Users of Flask will learn how to extend it and make shareable, reuseable libraries. Application developers not familiar with Flask get an idea of its capabilities for future projects.
 
 DETAILED ABSTRACT
 -----------------
@@ -50,24 +50,34 @@ OUTLINE
  	* The promise of Flask - lightweight, free to be you.  Here's a toolkit, now go build
  	* The bane of Flask - no batteries included. Here's a toolkit, now go build
 
-2. Extending functionality (5min) 
-	* Flask-FeatureFlags - 100LOC 
-	* Adds custom functionality and jinja filters 
-	* Go over how it does thi
+2. ?? Flask architecture in 5 min (5min)
+	* ?? explain what is WSGI/Werzeug
+	* ?? explain signals
+	* ?? explain blueprints
 
-4. Changing behavior (5min)
+3. Flask-FeatureFlags - a basic extension (10min) 
+	* adds feature flagging to Flask in ~100 LOC
+	* topics covered:
+		- Using signals to hook into request lifecycle
+		- Storing functions in the global variable g
+		- Decorators to customize view behavior
+		- Customizing Jinja
+		- Installing your extension
+		- Python 3 support
 
-5. Supporting the ecosystem (5min)
-	* Flask <0.6
-	* Flask 0.7-0.9
-	* Flask 0.10+ and Python 3
+5. The Crazy Stuff (5min)
+	* ?? how much can you push the envelope?
+
+	* Good libraries to learn from:
+		- Flask-SQLAlchemy
+		- Flask-DebugToolbar
 
 6. Questions (5min)
 
 ADDITIONAL NOTES
 -----------------
 
-* Flask-FeatureFlags is open source and only ~100 LOC: https://github.com/trustrachel/Flask-FeatureFlags
+* Flask-FeatureFlags is open source: https://github.com/trustrachel/Flask-FeatureFlags
 
 This would be my first time speaking at a conference like PyCon. I’ve spoken at my company a few times and at PyLadies events. I'll have the opportunity to speak at several user groups beforehand.
 

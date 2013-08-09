@@ -28,3 +28,7 @@ Examples of plugins:
 	* good use of signals to do work
 	* https://github.com/mitsuhiko/flask-sqlalchemy/blob/master/flask_sqlalchemy/__init__.py
 
+
+TAGLINE:
+
+"The idea of Flask is to build a good foundation for all applications. Everything else is up to you or extensions."

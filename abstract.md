@@ -18,10 +18,11 @@ DURATION
 DESCRIPTION
 -----------
 
-You can create a web application with Flask in seven lines of code. What happens when your app grows to thousands? How do you create reusable, shareable libraries?
+"The idea of Flask is to build a good foundation for all applications. Everything else is up to you or extensions." - Armin Ronacher, creator of Flask. 
 
-We'll use a real but very simple extension I created (Flask-FeatureFlags) to look at the different ways you can hook into Flask applications. 
+You can create a web application with Flask in seven lines of code, and you can grow that app to thousands. How do you create reusable, shareable libraries? What can this microframework do?
 
+We'll use a simple but real extension I created (Flask-FeatureFlags) to look at the different ways you can make Flask awesome.
 
 AUDIENCE
 --------
@@ -67,7 +68,7 @@ OUTLINE
  	* The bane of Flask - no batteries included. Here's a toolkit, now go build
  
 2. Flask is meant for tinkering, aka Flask architecture in 5 min (5min)
-	* What the heck is a WSGI, Werzeug and Jinja
+	* What the heck is a WSGI, Werzeug and Jinja?
 	* Flask has blueprints
 	* Flask has hooks (and subclassing)
 	* Flask has signals
@@ -75,31 +76,26 @@ OUTLINE
 
 3. Flask-FeatureFlags - a basic extension (10min) 
 	* adds feature flagging to Flask in ~100 LOC
-	* topics covered:
-		- Using signals to hook into request lifecycle
-		- Storing functions in the global variable g
-		- Decorators to customize view behavior
-		- Customizing Jinja
-		- Installing your extension
-		- Python 3 support
+	* It's tiny, but covers a lot:
+		- It uses signals to hook into request lifecycle
+		- It stores functions in the global variable g
+		- Exposes decorators to customize view behavior
+		- Customizes Jinja
+		- It even supports Python 3 (with a bit of extra code)
 
-5. The Crazy Stuff, aka pushin' the envelope (5min)
-	* Flask-DebugToolbar
-		- 
-	* monkeypatching
-	* SQLAlchemy hooks with Flask-SQLAlchemy
+5. Pushing the Envelope (5min)
+	* Hooking into SQLAlchemy (see Flask-FeatureFlags contrib library or Flask-DebugToolbar)
+	* Rework Flask's entire view system: Flask-Classy
+	* Add raptors (Flask-Raptor)
+	* other libraries as I have time
 
-	* Good libraries to learn from:
-		- Flask-SQLAlchemy
-		- 
+6. Go forth and expand: http://flask.pocoo.org/docs/extensiondev/
 
-6. Questions (5min)
+7. Questions (5min)
 
 ADDITIONAL NOTES
 -----------------
 
-* Flask-FeatureFlags is open source: https://github.com/trustrachel/Flask-FeatureFlags
+Flask-FeatureFlags is open source and in (internal) production use here at LinkedIn: https://github.com/trustrachel/Flask-FeatureFlags
 
 This would be my first time speaking at a conference like PyCon. I’ve spoken at my company a few times and at PyLadies events. I'll have the opportunity to speak at several user groups beforehand.
-
-

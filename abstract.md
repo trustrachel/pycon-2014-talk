@@ -36,12 +36,12 @@ Intermediate
 OBJECTIVES
 ----------
 
-Users of Flask will learn how to extend it and make shareable, reuseable libraries. People not familiar with Flask will get an idea of its architecture and capabilities.
+Users of Flask will learn how to extend it and make shareable, reuseable libraries. People not familiar with Flask will get an idea of its architecture and capabilities. 
 
 DETAILED ABSTRACT
 -----------------
 
-Built entirely on Python 3, the SpacePug project is one of the first major projects to run on Python 3, and it’s the first to launch pugs into orbit.
+Flask is an 
 
 Why Python 3?
 
@@ -62,36 +62,40 @@ Everyone knows the first thing a project should do is write their own test runne
 OUTLINE
 -------
 
-1. Introduction (5 min)
-	* About me
- 	* The promise of Flask - lightweight, free to be you.  Here's a toolkit, now go build
- 	* The bane of Flask - no batteries included. Here's a toolkit, now go build
- 
-2. Flask is meant for tinkering, aka Flask architecture in 5 min (5min)
-	* What the heck is a WSGI, Werzeug and Jinja?
-	* Flask has blueprints
-	* Flask has hooks (and subclassing)
-	* Flask has signals
-	* or even monkeypatching (eeeeeevil)
+0. About me
 
-3. Flask-FeatureFlags - a basic extension (10min) 
+1. The Really Quick Overview of Flask (5 min) 
+		* A really sweet marriage of WSGI (Werzeug) and templating (Jinja)
+	 	* The promise of Flask - lightweight, free to be you.  Here's a toolkit, now go build
+ 		* The bane of Flask - no batteries included. Here's a toolkit, now go build
+ 		* It's a toolkit for HTTP, designed with extensibility in mind 
+ 		* Show sample app
+
+2. The Really Quick Overview of Flask Architecture (5 min)
+		* Globals - g, request, and other ways to stash and grab data
+		* Blueprints - bundles of application components, useful for bolting on separate code
+		* Signals - we'll call you when we hear something
+		* Hooks - Flask has tons of 'em
+		* Subclassing - it's designed for it
+
+3. A practical example - Flask-FeatureFlags (10min) 
 	* adds feature flagging to Flask in ~100 LOC
 	* It's tiny, but covers a lot:
 		- It uses signals to hook into request lifecycle
-		- It stores functions in the global variable g
-		- Exposes decorators to customize view behavior
+		- Stashes functions in the global variable g
+		- Provides decorators to customize view behavior
 		- Customizes Jinja
-		- It even supports Python 3 (with a bit of extra code)
+		- It even supports Python 3!
 
-5. Pushing the Envelope (5min)
+4. Pushing the Envelope (5min)
 	* Hooking into SQLAlchemy (see Flask-FeatureFlags contrib library or Flask-DebugToolbar)
 	* Rework Flask's entire view system: Flask-Classy
-	* Add raptors (Flask-Raptor)
-	* other libraries as I have time
+	* Add raptors (Flask-Raptor) <-- need better example, this is silly
+	* or even monkeypatching (eeeeeevil)
 
-6. Go forth and expand: http://flask.pocoo.org/docs/extensiondev/
+5. Go forth and expand: http://flask.pocoo.org/docs/extensiondev/
 
-7. Questions (5min)
+6. Questions (5min)
 
 ADDITIONAL NOTES
 -----------------

@@ -20,7 +20,7 @@ DESCRIPTION
 
 "The idea of Flask is to build a good foundation for all applications. Everything else is up to you or extensions." - Armin Ronacher, creator of Flask. 
 
-You can create a web application with Flask in seven lines of code, and you can grow that app to thousands. How do you create reusable, shareable libraries? What can this microframework do?
+You can create a web application with Flask in seven lines of code, and you can grow that app to thousands. How do you create reusable, shareable libraries? 
 
 We'll use a simple but real extension I created (Flask-FeatureFlags) to look at the different ways you can make Flask awesome.
 

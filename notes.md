@@ -32,3 +32,4 @@ Examples of plugins:
 TAGLINE:
 
 "The idea of Flask is to build a good foundation for all applications. Everything else is up to you or extensions."
+

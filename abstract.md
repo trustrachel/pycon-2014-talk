@@ -39,21 +39,19 @@ Users of Flask will learn how to extend it and make shareable, reuseable librari
 DETAILED ABSTRACT
 -----------------
 
-"The idea of Flask is to build a good foundation for all applications. Everything else is up to you or extensions."  - Armin Ronacher, creator of Flask. 
+"The idea of Flask is to build a good foundation for all applications. Everything else is up to you or extensions." - Armin Ronacher, creator of Flask. 
 
-Flask purposely ships with almost nothing - it's a no-batteries-included toolkit at heart. Instead, it hands you the tools to make your own batteries. 
+No batteries included
 
-We'll start with a quick introduction to Flask, and go over over the various ways you can extend it to add your own functionality. 
+Flask purposely ships with almost nothing - it's a no-batteries-included toolkit at heart. Most functionality lies in the extension ecosystem, and if you want to share your own code, you'll need to learn how to create one. We'll talk about the architecture of Flask, and go over how you can extend it to add your own functionality. 
 
-A working example: Flask-FeatureFlags
+A working example - Flask-FeatureFlags 
 
-When my team moved to continous integration, we needed a way to hide incomplete features. I wrote a small library to do just that. Other teams were interested and it seemed generally useful so I rewrote it as a general purpose extension and open-sourced it.  
+When my team moved to continous integration, we needed a way to deploy but hide incomplete features. I wrote a small library to add feature flagging to our application. Other teams were interested so I rewrote it as a general purpose extension and open sourced it.  It's only a hundred lines of code, but it's a great indroduction to how you can extend Flask including signal hooks, decorators, and new Jinja functionality. It even works with Python 3.
 
-In a hundred lines of code, it shows most of the ways you can extend Flask including signal hooks, decorators, and new Jinja template functionality. It even works in Python 3.
+Where do you go from here?
 
-Some Title Goes Here
-
-We'll close with a sampler of Flask extensions that push the envelope to give you a flavor of where you can go after the basics.
+We'll end with a sampler of Flask extensions that push the envelope to give you a flavor of where you can go after the basics.
 
 OUTLINE
 -------

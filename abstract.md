@@ -18,8 +18,6 @@ DURATION
 DESCRIPTION
 -----------
 
-"The idea of Flask is to build a good foundation for all applications. Everything else is up to you or extensions." - Armin Ronacher, creator of Flask. 
-
 You can create a web application with Flask in seven lines of code, and you can grow that app to thousands. How do you create reusable, shareable libraries? 
 
 We'll use a simple but real extension I created (Flask-FeatureFlags) to look at the different ways you can make Flask awesome.
@@ -36,28 +34,26 @@ Intermediate
 OBJECTIVES
 ----------
 
-Users of Flask will learn how to extend it and make shareable, reuseable libraries. People not familiar with Flask will get an idea of its architecture and capabilities. 
+Users of Flask will learn how to extend it and make shareable, reuseable libraries. People not familiar with Flask will be introduced to its architecture and capabilities. 
 
 DETAILED ABSTRACT
 -----------------
 
-Flask is an 
+"The idea of Flask is to build a good foundation for all applications. Everything else is up to you or extensions."  - Armin Ronacher, creator of Flask. 
 
-Why Python 3?
+Flask purposely ships with almost nothing - it's a no-batteries-included toolkit at heart. Instead, it hands you the tools to make your own batteries. 
 
-Years ago, developers made an attempt to build a system on Python 2, but they found that it just wasn’t good enough to launch a dog into space, let alone a pug. One of the first problems they encountered was the GIL and the fact that the thrust controllers didn’t perform well enough to launch a dog of short, stocky stature. After switching to Python 3.2, which has an improved implementation of the GIL, the thrust controller performed so much better that analysis shows pugs could potentially join the Curiosity rover on the surface of Mars.
+We'll start with a quick introduction to Flask, and go over over the various ways you can extend it to add your own functionality. 
 
-The astropugs are able to communicate back to mission control via a special keyboard to speak their language, represented in a previously unassigned Unicode plane. While developing the communications systems, the developers found that Python 3’s distinction between bytes and text makes their code more readable and easier to understand. They prepared benchmarks comparing a Python 2.7 implementation against a Python 3.3 implementation to show the 3.3 version is more memory efficient thanks to PEP 393.
+A working example: Flask-FeatureFlags
 
-A new library: multipugging
+When my team moved to continous integration, we needed a way to hide incomplete features. I wrote a small library to do just that. Other teams were interested and it seemed generally useful so I rewrote it as a general purpose extension and open-sourced it.  
 
-Early versions of the project only supported one pug per spacecraft. Feeding and cleaning up after multiple pugs was a significant issue, so much that early testing sent the engineers back to the drawing board to start from scratch. In comes multipugging, a system to control multiple feeders and cleaners, removing the common bottleneck of dealing with the needs of multiple pugs in orbit.
+In a hundred lines of code, it shows most of the ways you can extend Flask including signal hooks, decorators, and new Jinja template functionality. It even works in Python 3.
 
-This talk will show a live demo of multipugging scaling out to feed 16 pugs at once.
+Some Title Goes Here
 
-A new test runner: treadmill
-
-Everyone knows the first thing a project should do is write their own test runner, so we did just that with treadmill. It’s like putting a pug on a treadmill, but for code.
+We'll close with a sampler of Flask extensions that push the envelope to give you a flavor of where you can go after the basics.
 
 OUTLINE
 -------
@@ -65,18 +61,18 @@ OUTLINE
 0. About me
 
 1. The Really Quick Overview of Flask (5 min) 
-		* A really sweet marriage of WSGI (Werzeug) and templating (Jinja)
-	 	* The promise of Flask - lightweight, free to be you.  Here's a toolkit, now go build
- 		* The bane of Flask - no batteries included. Here's a toolkit, now go build
- 		* It's a toolkit for HTTP, designed with extensibility in mind 
- 		* Show sample app
+	* A really sweet marriage of WSGI (Werzeug) and templating (Jinja)
+ 	* The promise of Flask - lightweight, free to be you.  Here's a toolkit, now go build
+	* The bane of Flask - no batteries included. Here's a toolkit, now go build
+	* It's a toolkit for HTTP, designed with extensibility in mind 
+	* Show sample app
 
 2. The Really Quick Overview of Flask Architecture (5 min)
-		* Globals - g, request, and other ways to stash and grab data
-		* Blueprints - bundles of application components, useful for bolting on separate code
-		* Signals - we'll call you when we hear something
-		* Hooks - Flask has tons of 'em
-		* Subclassing - it's designed for it
+	* Globals - g, request, and other ways to stash and grab data
+	* Blueprints - bundles of application components, useful for bolting on separate code
+	* Signals - we'll call you when we hear something
+	* Hooks - Flask has tons of 'em
+	* Subclassing - it's designed for it
 
 3. A practical example - Flask-FeatureFlags (10min) 
 	* adds feature flagging to Flask in ~100 LOC

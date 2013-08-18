@@ -16,17 +16,17 @@ Gotchas
 Examples of plugins:
 
 * Flask-FeatureFlags
-	* Simple, easy to understand (100 LOC)
-	* https://github.com/trustrachel/Flask-FeatureFlags
+    * Simple, easy to understand (100 LOC)
+    * https://github.com/trustrachel/Flask-FeatureFlags
 
 * Flask-DebugToolbar
-	* Port of Django's DebugToolbar
-	* complex functionality, timing, additional blueprints
+    * Port of Django's DebugToolbar
+    * complex functionality, timing, additional blueprints
 
 * Flask-SQLAlchemy 
-	* Makes integration with SQLAlchemy easy
-	* good use of signals to do work
-	* https://github.com/mitsuhiko/flask-sqlalchemy/blob/master/flask_sqlalchemy/__init__.py
+    * Makes integration with SQLAlchemy easy
+    * good use of signals to do work
+    * https://github.com/mitsuhiko/flask-sqlalchemy/blob/master/flask_sqlalchemy/__init__.py
 
 
 TAGLINE:

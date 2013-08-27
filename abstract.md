@@ -48,7 +48,7 @@ When my team moved to continuous integration, we needed a way to deploy but hide
 
 It's only a hundred lines of code, but it's a good introduction to how you can extend Flask including signal hooks, decorators, and new Jinja functionality. It even works with Python 3.
 
-**Where do you go from here?*
+**Where do you go from here?**
 
 We'll end with a sampler of Flask extensions that push the envelope to give you an idea of where you can go after the basics.
 OUTLINE

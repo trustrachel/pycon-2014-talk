@@ -18,10 +18,7 @@ DURATION
 DESCRIPTION
 -----------
 
-You can create a web application with Flask in seven lines of code, and you can grow that app to thousands. How do you create reusable, shareable libraries? 
-
-We'll use a simple but real extension I created (Flask-FeatureFlags) to look at the different ways you can make Flask awesome.
-
+You can create a web application with Flask in seven lines of code, and you can grow that app to thousands. How do you create reusable, shareable libraries? We'll use a simple but real extension I created (Flask-FeatureFlags) to look at the different ways you can make Flask awesome. 
 AUDIENCE
 --------
 Users of Flask or developers curious about its capabilities. 
@@ -39,20 +36,21 @@ Users of Flask will learn how to extend it and make shareable, reuseable librari
 DETAILED ABSTRACT
 -----------------
 
-"The idea of Flask is to build a good foundation for all applications. Everything else is up to you or extensions." - Armin Ronacher, creator of Flask. 
+"The idea of Flask is to build a good foundation for all applications. Everything else is up to you or extensions." -- Armin Ronacher, creator of Flask
 
-No batteries included
+**No batteries included? Make your own.**
 
-Flask purposely ships with almost nothing - it's a no-batteries-included toolkit at heart. Most functionality lies in the extension ecosystem, and if you want to share your own code, you'll need to learn how to create one. We'll talk about the architecture of Flask, and go over how you can extend it to add your own functionality. 
+Flask purposely ships with almost nothing - it's a no-batteries-included toolkit at heart. Most functionality lies in the extension ecosystem, and if you want to share your own code, you'll need to learn how to create one. We'll talk about the architecture of Flask, and go over how you can extend it to add your own functionality.
 
-A working example - Flask-FeatureFlags 
+**A working example: Flask-FeatureFlags**
 
-When my team moved to continous integration, we needed a way to deploy but hide incomplete features. I wrote a small library to add feature flagging to our application. Other teams were interested so I rewrote it as a general purpose extension and open sourced it.  It's only a hundred lines of code, but it's a great indroduction to how you can extend Flask including signal hooks, decorators, and new Jinja functionality. It even works with Python 3.
+When my team moved to continuous integration, we needed a way to deploy but hide incomplete features. I wrote a small library to add feature flagging to our application. Other teams were interested so I rewrote it as a general purpose extension and open sourced it.
 
-Where do you go from here?
+It's only a hundred lines of code, but it's a good introduction to how you can extend Flask including signal hooks, decorators, and new Jinja functionality. It even works with Python 3.
 
-We'll end with a sampler of Flask extensions that push the envelope to give you a flavor of where you can go after the basics.
+**Where do you go from here?*
 
+We'll end with a sampler of Flask extensions that push the envelope to give you an idea of where you can go after the basics.
 OUTLINE
 -------
 
@@ -84,7 +82,6 @@ OUTLINE
 4. Pushing the Envelope (5min)
 	* Hooking into SQLAlchemy (see Flask-FeatureFlags contrib library or Flask-DebugToolbar)
 	* Rework Flask's entire view system: Flask-Classy
-	* Add raptors (Flask-Raptor) <-- need better example, this is silly
 	* or even monkeypatching (eeeeeevil)
 
 5. Go forth and expand: http://flask.pocoo.org/docs/extensiondev/
@@ -94,6 +91,6 @@ OUTLINE
 ADDITIONAL NOTES
 -----------------
 
-Flask-FeatureFlags is open source and in (internal) production use here at LinkedIn: https://github.com/trustrachel/Flask-FeatureFlags
+Flask-FeatureFlags is open source and in internal production use here at LinkedIn: https://github.com/trustrachel/Flask-FeatureFlags
 
-This would be my first time speaking at a conference like PyCon. I’ve spoken at my company a few times and at PyLadies events. I'll have the opportunity to speak at several user groups beforehand.
+This would be my first time speaking at a conference like PyCon. I've spoken at my company a few times and at PyLadies events. I'll have the opportunity to speak at several user groups beforehand, and I'm planning on using the heck out of my company's speaker training sessions.  
